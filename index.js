@@ -9,7 +9,7 @@ app.use(cors());
 
 //start mysql connection
 var connection = mysql.createConnection({
-  host: "localhost", //mysql database host name
+  host: "184.168.112.1", //mysql database host name
   user: "codewin", //mysql database user name
   password: "(2M.oHNcl}yu", //mysql database password
   database: "ssdntest", //mysql database name
