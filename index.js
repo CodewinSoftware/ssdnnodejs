@@ -1,6 +1,6 @@
 var http = require("http");
 var express = require("express");
-const cors = require('cors');
+const cors = require("cors");
 var app = express();
 var mysql = require("mysql");
 var bodyParser = require("body-parser");
@@ -40,7 +40,7 @@ var server = app.listen(3002, "127.0.0.1", function () {
 });
 
 //rest api to get all customers
-app.get("/customer", function (req, res) {
+app.get("/", function (req, res) {
   connection.query(
     `SELECT v.*, c.id as category_id, c.name as category_name, c.slug as category_slug, c.heading as category_heading,
    pc.id as parent_category_id, pc.name as parent_category_name, pc.slug as parent_category_slug, pc.heading as parent_category_heading
